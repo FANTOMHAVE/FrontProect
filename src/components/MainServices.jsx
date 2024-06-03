@@ -2,7 +2,6 @@ import React from 'react'
 
 export default function MainServices () {
     return (
-        
         <div>
             <center>
             <p><h1>- Основные услуги -</h1></p>

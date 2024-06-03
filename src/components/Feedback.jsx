@@ -1,11 +1,14 @@
 import React from 'react';
+import Button from '@mui/material/Button';
+import { Link } from "react-router-dom";
 
 export default function Feedback() {
   return (
-    <div id="block8">
+    <>
         <center>
-      <form action="you.html" method="POST">
-        <h1>- Связаться с нами -</h1>
+      <form >
+        <br />
+        <h1>- Связаться c нами -</h1>
 
         <label>
           <font size="3" color="black" face="Arial">Имя</font>
@@ -30,10 +33,12 @@ export default function Feedback() {
         </label>
         <input type="email" name="user_email" placeholder="mail@mail.ru" required />
         <br />
-        
-        <button type="submit">Отправить</button>
+        <Button component={Link} to="/feedcomplete" >
+              <font size="5" color="black" face="Impact">Отправить</font>
+          </Button>
       </form>
       </center>
-    </div>
+      <br />
+    </>
   );
 }

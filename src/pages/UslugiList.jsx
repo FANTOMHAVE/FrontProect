@@ -1,4 +1,3 @@
-// UslugiList.js
 import React from "react";
 import { UslugiData } from "../helpers/UslugiData";
 import ServiceButton from "../components/ServiceButton";
@@ -10,48 +9,59 @@ function UslugiList() {
   const khirurgiya = UslugiData.filter(usluga => usluga.id >= 16 && usluga.id <= 20);
 
   return (
-    <div className="listOfUslug">
+    <>
+    <br />
       <div id="block31">
         <h1>Лечение</h1>
         <div id="block311">
-          <div id="block3111">
+          <div>
             {lechenie.map(uslugi => (
               <ServiceButton key={uslugi.id} uslugi={uslugi} />
             ))}
           </div>
         </div>
       </div>
+      <br /> 
+      <div id="block0"></div>
+      <br />
       <div id="block31">
         <h1>Для детей</h1>
         <div id="block311">
-          <div id="block3111">
+          <div>
             {dlyaDetey.map(uslugi => (
               <ServiceButton key={uslugi.id} uslugi={uslugi} />
             ))}
           </div>
         </div>
       </div>
+      <br /> 
+      <div id="block0"></div>
+      <br />
       <div id="block31">
         <h1>Диагностика</h1>
         <div id="block311">
-          <div id="block3111">
+          <div>
             {diagnostika.map(uslugi => (
               <ServiceButton key={uslugi.id} uslugi={uslugi} />
             ))}
           </div>
         </div>
       </div>
+      <br /> 
+      <div id="block0"></div>
+      <br />
       <div id="block31">
         <h1>Хирургия</h1>
         <div id="block311">
-          <div id="block3111">
+          <div>
             {khirurgiya.map(uslugi => (
               <ServiceButton key={uslugi.id} uslugi={uslugi} />
             ))}
           </div>
         </div>
       </div>
-    </div>
+      <br /> 
+      </>
   );
 }
 

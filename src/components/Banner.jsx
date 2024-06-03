@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-
 const images = [
   "main1.jpg",
   "main2.jpg",
